@@ -1,0 +1,49 @@
+.forma {
+    background-color: honeydew;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+    width: 320px;
+}
+
+.form__items {
+    width: 300px;
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #8c8c8c;
+
+}
+
+.summa-container {
+    width: 150px;
+    background-color: rgb(41, 121, 41);
+    color: white;
+    padding: 0.5rem 0.5rem;
+    font-size: 1rem;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.Calc {
+    background-color: rgb(41, 121, 41);
+    color: white;
+    padding: 0.5rem 0.5rem;
+    font-size: 1rem;
+    border: 1px solid white;
+    border-radius: 5px;
+
+}
+
+.calc-container {
+    display: flex;
+}
+
+fieldset {
+    width: 270px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}

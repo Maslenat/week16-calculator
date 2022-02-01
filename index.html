@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/normalize.css">
+</head>
+
+<body>
+    <form class="forma" id="forma">
+        <p class="forma__p">Калькулятор рассчета стоимости автомобиля</p>
+
+        <select id="marka" class="form__items">
+            <option value="marka" selected>Марка</option>
+            <option value="toyota">Toyota</option>
+            <option value="subaru">Subaru</option>
+            <option value="honda">Honda</option>
+        </select>
+
+        <select id="model" class="form__items" disabled></select>
+        <fieldset>
+
+            <legend> Возраст автомобиля</legend>
+            <input type="radio" id="age3" name="age" value="50" checked>
+
+            <label for="age3">Меньше 3 лет</label><br>
+            <input type="radio" id="age5" name="age" value="80">
+            <label for="age5">От 3 до 5 лет</label> <br>
+            <input type="radio" id="age10" name="age" value="100">
+            <label for="age10">От 3 до 10 лет</label>
+
+
+        </fieldset>
+        <fieldset>
+            <legend>Дополнительная комплектация</legend>
+            <input type="checkbox" name="komplect" id="salon" value="10">
+            <label for="salon">Салон кожа</label> <br>
+            <input type="checkbox" name="komplect" id="klimat" value="15">
+            <label for="klimat">Климат-контроль</label> <br>
+            <input type="checkbox" name="komplect" id="multi" value="5">
+            <label for="multi">Мультируль</label>
+        </fieldset>
+
+
+    </form>
+
+    <div class="calc-container">
+        <button type="button" id="calc" class="Calc">Расcчитать</button>
+        <div id="summa"></div>
+    </div>
+
+    <script src="./scripts/index.js"></script>
+</body>
+
+</html>
