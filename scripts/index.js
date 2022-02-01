@@ -32,6 +32,9 @@ const choose = () => {
         let model = document.getElementById('model');
         model.appendChild(option);
         option.text = "Модель";
+        document.getElementById('summa').innerHTML = "";
+        document.getElementById('summa').innerText = "";
+        document.getElementById('summa').classList.toggle("summa-container");
         return;
     } else if (marka == "toyota") {
         massivModels = [...toyota];
@@ -77,10 +80,3 @@ document.getElementById('calc').onclick = function () {
     }
 }
 
-const chooseMarka = () => {
-    const marka = document.getElementById('marka').value;
-    if (marka2 == "marka") {
-        document.getElementById('summa').innerHTML = "";
-    }
-
-}
