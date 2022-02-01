@@ -1,8 +1,8 @@
 .forma {
     background-color: honeydew;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 20px;
+
     grid-gap: 10px;
     width: 320px;
 }
@@ -17,7 +17,13 @@
     color: #8c8c8c;
 
 }
+.forma__p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    font-style: italic;
+    text-align: center;
 
+}
 .summa-container {
     width: 150px;
     background-color: rgb(41, 121, 41);
@@ -39,7 +45,12 @@
 }
 
 .calc-container {
+    width: 300px;
+    margin-top: 10px;
     display: flex;
+    justify-content: space-between;
+    border: 1px solid gray;
+    border-radius: 5px;
 }
 
 fieldset {
